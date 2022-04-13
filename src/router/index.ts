@@ -1,14 +1,20 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import Dashbroad from "@/components/Dashbroad/index.vue";
+import User from "@/components/User/index.vue";
 
 Vue.use(VueRouter);
 
 const routes: Array<RouteConfig> = [
   {
     path: "/",
-    name: "Home",
+    name: "home",
     component: Dashbroad,
+  },
+  {
+    path: "/user",
+    name: "user",
+    component: User,
   },
   // {
   //   path: "/about",
